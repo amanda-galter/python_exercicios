@@ -1,0 +1,23 @@
+#situação desafiadora
+print('CALCULO DE GRANDEZAS ELÉTRICAS\n')
+print('1. tensão(em volt)\n')
+print('2. resistência(em ohm)\n')
+print('3. corrente Ampére\n')
+grandeza=(input('selecione qual quandeza deseja calcular(1,2 ou 3): '))
+if grandeza=='1':
+    resistencia=float(input('apresente o valor da resistência: '))
+    corrente=float(input('apresente a corrente: '))
+    resultado1=resistencia*corrente
+    print(f'a sua tensão é de {resultado1} V')
+elif grandeza=='2':
+    tensão=float(input('apresente sua tensão: '))
+    corrente=float(input('apresente a corrente: '))
+    resultado2=tensão/corrente
+    print(f'a sua resistêsncia é de {resultado2} ohm')
+elif grandeza=='3':
+    tensão=float(input('apresente sua tensão: '))
+    resistencia=float(input('apresente o valor da resistência: '))
+    resultado3=tensão/resistencia
+    print(f'a sua corrente é de {resultado3} Ampére')
+else:
+    print('nada a fazer por aqui, por favor informe o que devemos fazer.')
